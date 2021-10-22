@@ -1,0 +1,142 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.topbarCenter {
+  flex: 5;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchInput {
+  border: none;
+  width: 70%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+  /* margin-right: 50px; */
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.topbarImg {
+  width: 48px;
+  height: 48px;
+  top: 2px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+
+.action{
+  position: relative;
+  background-color: black;
+  top: 85px;
+  
+  margin-right: 10px;
+  height: 120px;
+  width: 100px;
+}
+
+.action ul{
+  list-style: none;
+  padding: 20px;
+}
+
+.action ul li{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.action ul li:hover{
+  color: #4d97f8;
+  border-left: 5px solid #0a66c2;
+  padding-left: 10px;
+}
+
+.spiner{
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 999999;
+}
+
+.spiner img{
+  margin: 300px 300px 500px 700px;
+  background-color: transparent;
+  border-radius: 50%;
+}
