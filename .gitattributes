@@ -1,3 +1,4 @@
 * text=auto
-*.js text eol=lf
+*.jsx linguist-language=JavaScript
+*.js linguist-language=JavaScript
 *.py linguist-language=Python
