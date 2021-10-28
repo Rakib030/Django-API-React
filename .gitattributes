@@ -1,9 +1,11 @@
 # Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
-*.rb linguist-language=Python
-*.rb linguist-language=JavaScript
-*.html linguist-detectable=false
-* linguist-vendored
-*.py linguist-vendored=false
+# *.rb linguist-language=Python
+# *.rb linguist-language=JavaScript
+# *.html linguist-detectable=false
+# * linguist-vendored
+# *.py linguist-vendored=false
+* text=auto
+
 
 
 # Replace any whitespace in the language name with hyphens:
