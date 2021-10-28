@@ -1,4 +1,4 @@
-* text=auto
+# * text=auto
 *.jsx linguist-language=JavaScript
 *.js linguist-language=JavaScript
 *.py linguist-language=Python
