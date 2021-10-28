@@ -2,9 +2,8 @@
 *.rb linguist-language=JavaScript
 # *.html linguist-detectable=false
 * linguist-vendored
-*.py linguist-vendored=false
-* text=auto
-
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
 
 
 # Replace any whitespace in the language name with hyphens:
