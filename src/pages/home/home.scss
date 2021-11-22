@@ -1,0 +1,10 @@
+.home{
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
