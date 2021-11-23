@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 import {Link} from "react-router-dom";
+import {axiosInitial} from "../../api/axios"
 import "./register.scss";
 
 export default function Register() {
@@ -10,8 +11,12 @@ export default function Register() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const handleStart = () => {
+  const handleStart = async() => {
     setEmail(emailRef.current.value);
+    await axiosInitial.post(`/api/user/create/`, {
+      email: email,
+      password: password
+    });
   };
   const handleFinish = () => {
     setPassword(passwordRef.current.value);
