@@ -29,9 +29,18 @@ class UserLogin(APIView):
                 token = Token.objects.get(user=user)
             else:
                 token = Token.objects.create(user=user)
-            return Response({f"key: {token.key}"}, status=status.HTTP_200_OK)
+            return Response(token.key, status=status.HTTP_200_OK)
         else:
             return Response({"error": "Invalid Credentials"}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserProfile(APIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        user = request.user
+        serializer = UserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 class UpdateUser(APIView):
