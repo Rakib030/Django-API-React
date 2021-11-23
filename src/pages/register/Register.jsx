@@ -11,15 +11,15 @@ export default function Register() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const handleStart = async() => {
+  const handleStart = () => {
     setEmail(emailRef.current.value);
+  };
+  const handleFinish = async() => {
+    setPassword(passwordRef.current.value);
     await axiosInitial.post(`/api/user/create/`, {
       email: email,
       password: password
     });
-  };
-  const handleFinish = () => {
-    setPassword(passwordRef.current.value);
   };
   return (
     <div className="register">
